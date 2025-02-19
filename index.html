@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Asesor Fitness</title>
+    <title>ATHLETE CARE</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100">
@@ -79,22 +79,22 @@
             
             switch (deporte) {
                 case 'futbol':
-                    planEntrenamiento = '<ul><li>Entrenamiento de resistencia y velocidad</li><li>Ejercicios de agilidad</li><li>Partidos de práctica</li></ul>';
+                    planEntrenamiento += '<ul><li>Entrenamiento de resistencia y velocidad</li><li>Ejercicios de agilidad</li><li>Partidos de práctica</li></ul>';
                     break;
                 case 'basket':
-                    planEntrenamiento = '<ul><li>Trabajo de salto y fuerza</li><li>Entrenamiento de tiro y dribbling</li><li>Resistencia aeróbica</li></ul>';
+                    planEntrenamiento += '<ul><li>Trabajo de salto y fuerza</li><li>Entrenamiento de tiro y dribbling</li><li>Resistencia aeróbica</li></ul>';
                     break;
                 case 'natacion':
-                    planEntrenamiento = '<ul><li>Series de velocidad y fondo</li><li>Ejercicios técnicos de brazada</li><li>Trabajo de fuerza fuera del agua</li></ul>';
+                    planEntrenamiento += '<ul><li>Series de velocidad y fondo</li><li>Ejercicios técnicos de brazada</li><li>Trabajo de fuerza fuera del agua</li></ul>';
                     break;
                 case 'atletismo':
-                    planEntrenamiento = '<ul><li>Ejercicios de velocidad y técnica</li><li>Entrenamiento de resistencia</li><li>Fuerza específica</li></ul>';
+                    planEntrenamiento += '<ul><li>Ejercicios de velocidad y técnica</li><li>Entrenamiento de resistencia</li><li>Fuerza específica</li></ul>';
                     break;
                 case 'gym':
-                    planEntrenamiento = '<ul><li>Rutina de fuerza y musculación</li><li>Ejercicios funcionales</li><li>Cardio opcional</li></ul>';
+                    planEntrenamiento += '<ul><li>Rutina de fuerza y musculación</li><li>Ejercicios funcionales</li><li>Cardio opcional</li></ul>';
                     break;
                 default:
-                    planEntrenamiento = '<p>No se ha seleccionado un deporte.</p>';
+                    planEntrenamiento += '<p>No se ha seleccionado un deporte.</p>';
             }
             document.getElementById('entrenamiento').innerHTML += planEntrenamiento;
             document.getElementById('fitnessForm').classList.add('hidden');
